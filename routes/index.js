@@ -10,5 +10,15 @@ router.get('/getName', function(req, res, next) {
   	name: 'xch'
   });
 });
+router.get('/api/getName', function(req, res, next) {
+  res.json({
+  	name: 'xch'
+  });
+});
+router.get('/api/getAge', function(req, res, next) {
+  res.json({
+  	age: 213
+  });
+});
 
 module.exports = router;
