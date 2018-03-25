@@ -5,5 +5,10 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+router.get('/getName', function(req, res, next) {
+  res.json({
+  	name: 'xch'
+  });
+});
 
 module.exports = router;
